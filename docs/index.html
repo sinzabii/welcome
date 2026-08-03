@@ -6,9 +6,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        .logo {
+            width: 100%;
+            text-align: center;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            width: 100%;
+            max-width: 550px;
+        }
+
+        .button-grid .button-link:last-child:nth-child(odd) {
+            grid-column: 1 / -1;
+            width: calc(50% - clamp(0.2rem, 0.75vh, 0.625rem));
+            margin: 0 auto;
+        }
+
+        .button-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 5px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .button-link svg {
+            width: 100px;
+            height: 40px;
+            flex-shrink: 0;
+        }
+
+        .button-label {
+            text-transform:lowercase;
+        }
+
+        
+    </style>
     
-    <body>testing testing 1 2 3 this is where the project begins</body>
-    <body>ig / x / youtube / github / project</body>
     
 </head>
+
+    <body>
+        <section class="logo">    
+            <div>
+                <body>SinZabii</body>
+                <p>placeholder</p>
+            </div>
+
+            <div class="button-grid">
+                <a class="button-link">
+                    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />                    
+                    </svg>
+                    <span class="button-label">Instagram</span>
+                </a>
+            </div>
+
+            <div class="button-grid">
+                <a class="button-link">
+                    
+                </a>
+            </div>
+
+            <div class="button-grid">
+                <a class="button-link">
+                    
+                </a>
+            </div>
+
+            <div class="button-grid">
+                <a class="button-link">
+                   
+                </a>
+            </div>
+
+            <div class="button-grid">
+                <a class="button-link">
+                    
+                </a>
+            </div>
+
+            <div class="button-grid">
+                <a class="button-link">
+                    
+                </a>
+            </div>
+
+        </section>
+
+        <body>testing testing 1 2 3 this is where the project begins</body>
+        <body>ig / x / youtube / github / project</body>
+    </body>
+
 </html>
